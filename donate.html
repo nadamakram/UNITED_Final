@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Donation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="knockout-3.4.2.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="facade.js"></script>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 170px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    height: 550px; /* Should be removed. Only for demonstration */
+}
+
+.left, .middle {
+  width: 25%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label { display: table-cell; }
+input { display: table-cell; }
+
+</style>
+</head>
+
+<body>
+    <div >
+            <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#myPage"> <img src="logo2.png" width="150" height="130" ></img></a>
+                      </div>
+                      <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="home2.html">HOME</a></li>
+                          <li><a href="#thisIsAbout">About us</a></li>
+                          <li><a href="Signup.html">Sign up</a></li>
+                          <li><a href="Login.html">Login</a></li>
+                          <li><a href="#thisIsFooter">Contact us</a></li>
+                          <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="donate.html">Donate</a></li>
+                              <li><a href="maps.html">Maps</a></li>
+                              <li><a href="#">Media</a></li> 
+                            </ul>
+                          </li>
+                          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column left" style="background-color:#F4F6F6;">
+            <img src="donation-illustration-earth-v2.png" width="270" height="270">
+        </div>
+
+        <div class="column middle" style="background-color: #F4F6F6;">
+            <h2>Help us do more</h2>
+            <p>We'll get right to the point: we're asking you to help support UNITED.
+                We're a nonprofit that relies on support from people like you.</p>
+        </div>
+
+        <div class="column right" style="background-color:#F4F6F6;">
+
+            <label for="email"><b>Select the amount: </b></label>
+            <br>
+            <div>
+                <input type="radio" name="amount$" value="10"> 10$
+                <input type="radio" name="amount$" value="20"> 20$
+                <input type="radio" name="amount$" value="50"> 50$
+                <input type="radio" name="amount$" value="150"> 150$
+                <input type="radio" name="amount$" value="200"> 200$
+            </div>
+           
+            <div class="container">
+
+            <label><b>Name: </b></label>
+            <input type="text" placeholder="Enter your name" name="name01" >
+            <br>
+            <br>
+            <label><b>Email: </b></label>
+            <input type="text" placeholder="Enter your email" name="email01">
+
+            <br>
+            <br>
+            <label><b>Your credit number: </b></label>
+            <input type="text" placeholder="Enter your credit number" name="credit01">
+            <br>
+            <br>
+            <label><b>Choose your country: </b></label>
+            <select>
+                <option value="egypt">Egypt</option>
+                <option value="lebanon">Lebanon</option>
+                <option value="KSA">Kingdom Saudi Arabia</option>
+                <option value="tunis">Tunis</option>
+            </select>
+            <br>
+            <input style=" border: none;color: #FFF;" type="submit" name="confirm_submit" value="Confirm donation" onclick="donationRun();">
+
+            <input type="checkbox" data-bind="checked:isVisible" />
+            <div data-bind="visible:isVisible ">
+                <p data-bind="style:{backgroundColor:dataColor,fontSize:size}">
+                    Thank you for your donation,
+                    <b data-bind="text:name"></b>
+                </p>
+            </div>
+            </div>
+            <br>
+            <br>
+            
+
+            <script type="text/javascript">
+                function ViewModel() {
+                    this.name = "Dr. Waleed";
+                    this.isVisible = ko.observable(true);
+                    this.dataColor = '#F4F6F6';
+                    this.size = 24;
+                }
+                ko.applyBindings(new ViewModel());
+            </script>
+
+        </div>
+    </div>
+
+</body>
+<footer id="thisIsFooter" class="w3-container w3-padding-64 w3-center w3-opacity w3-white w3-xlarge">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i> </a>
+        <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+        <a href="https://twitter.com/" target="_blank"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    
+    </footer>
+</html>

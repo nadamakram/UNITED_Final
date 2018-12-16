@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+        .sub1, .sub2 { display: none; }
+
+:checked ~ .sub1, :checked ~ .sub2 {
+    display: block;
+    margin-left: 40px;
+}
+        </style>
+    </head>
+    <body>
+            <div>
+                    <input type="radio" name="level0" value="D" id="D"/>
+                    <label for="D">user</label>
+                    <div class="sub1">
+                        <div>
+                            <input type="radio" name="level1" value="D0" id="D0"/>
+                            <label for="D0">volunteer</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="level1" value="D1" id="D1"/>
+                            <label for="D1">charity</label>
+                          
+                        </div>
+                    </div>
+                </div>
+    </body>
+    
+</html>
