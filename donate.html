@@ -106,7 +106,7 @@ input { display: table-cell; }
                             <ul class="dropdown-menu">
                               <li><a href="donate.html">Donate</a></li>
                               <li><a href="maps.html">Maps</a></li>
-                              <li><a href="#">Media</a></li> 
+                              <li><a href="game.html">Play&Earn Points</a></li> 
                             </ul>
                           </li>
                           <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
@@ -131,6 +131,12 @@ input { display: table-cell; }
             <h2>Help us do more</h2>
             <p>We'll get right to the point: we're asking you to help support UNITED.
                 We're a nonprofit that relies on support from people like you.</p>
+                <p>
+                    <strong> You can play and earn money for donation </strong> 
+                </p>
+                <form action="game.html">
+                    <input type="submit" value="Play" />
+                </form>
         </div>
 
         <div class="column right" style="background-color:#F4F6F6;">
@@ -170,6 +176,7 @@ input { display: table-cell; }
             <br>
             <input style=" border: none;color: #FFF;" type="submit" name="confirm_submit" value="Confirm donation" onclick="donationRun();">
 
+            <!--view in MVVM-->
             <input type="checkbox" data-bind="checked:isVisible" />
             <div data-bind="visible:isVisible ">
                 <p data-bind="style:{backgroundColor:dataColor,fontSize:size}">
@@ -181,7 +188,7 @@ input { display: table-cell; }
             <br>
             <br>
             
-
+            <!--model view in MVVM-->     
             <script type="text/javascript">
                 function ViewModel() {
                     this.name = "Dr. Waleed";
